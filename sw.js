@@ -9,9 +9,10 @@ self.addEventListener('install',function(event){
     event.waitUntil(
         caches.open('restaurant_cache').then(function(cache){
             return cache.addAll([
-                '/',
-                'js/',
-                'css/'
+                'js/main.js',
+                'js/dbhelper.js',
+                'js/restaurant_info.js',
+                'css/styles.css'
             ]);
         })
     )
